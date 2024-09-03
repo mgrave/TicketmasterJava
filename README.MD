@@ -1,3 +1,4 @@
+
 <img src="https://github.com/uFelps/assets/blob/main/Ticketmaster/ticketmaster1.png?raw=true" width="80">
 
 # Ticketmaster
@@ -54,3 +55,11 @@ Neste projeto, foram empregadas as seguintes tecnologias e ferramentas:
 
 - <a href="https://github.com/uFelps/Ticketmaster/tree/main/frontend">Frontend</a>
 - <a href="https://github.com/uFelps/Ticketmaster/tree/main/ticketmaster-backend">Backend</a>
+
+frontend
+	docker build -t frontend .
+	docker run -p 3000:5173 frontend
+
+backend
+	docker build -t backend .
+	docker run -p 5000:8080 backend

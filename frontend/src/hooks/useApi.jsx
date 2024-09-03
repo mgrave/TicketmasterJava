@@ -5,7 +5,7 @@ import { LoadContext } from "../context/LoadContext";
 
 const api = axios.create({
   // Atribuindo uma instância do axios na variavel api
-  baseURL: import.meta.env.VITE_REACT_API_URL ?? "http://192.168.0.211:8080", // Lê a api do arquivo de environment
+  baseURL: import.meta.env.VITE_REACT_API_URL ?? "http://localhost:5000", // Lê a api do arquivo de environment
 });
 
 export const useApi = () => ({

@@ -5,5 +5,5 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17
 COPY --from=build /target/backend-0.0.1-SNAPSHOT.jar demo.jar
 VOLUME /tmp
-EXPOSE 8080
+EXPOSE 5000
 ENTRYPOINT ["java","-jar","/demo.jar"]
